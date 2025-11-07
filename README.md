@@ -11,7 +11,7 @@ Three main stages were developed and evaluated:
 2. **Convolutional Neural Networks (CNN)**
 3. **Optimizer and Learning Rate Tuning**
 
-Each model was trained, tested, and compared based on accuracy, convergence speed, and generalization performance.
+Each model was trained, tested, and compared based on testing accuracy.
 
 ---
 
