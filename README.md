@@ -1,20 +1,18 @@
 🧠 Neural Network Performance Comparison on MNIST Dataset
+
 📘 Project Overview
 
-This project explores and compares the performance of multiple neural network architectures on the MNIST handwritten digits dataset. It is divided into three main stages to demonstrate the impact of architectural depth, convolutional layers, optimizers, and learning rates on model accuracy and generalization.
+In this project, multiple neural network models with different architectures were implemented to evaluate their performance on the MNIST dataset. The process consisted of three main stages:
+
+- Baseline Model: Develop a neural network without convolutional layers to perform the classification task, then modify the model structure to enhance its performance.
+
+- Convolutional Model: Construct a neural network incorporating convolutional layers, and experiment with varying the number of layers, filters, and activation functions to further improve results.
+
+- Optimization Tuning: Adjust the optimizer type and learning rate used in previous models to observe and analyze their impact on overall model performance.
 
 🧩 Stage 1: Neural Networks Without Convolutional Layers
+
 🔹 Model 1 — Basic Fully Connected Network
-
-Structure: 2 hidden layers (32 → 8 neurons)
-
-Epochs: 10
-
-Optimizer: SGD
-
-Learning Rate: 0.001
-
-Result:
 
 Training Accuracy: 84.75%
 
@@ -22,105 +20,35 @@ Testing Accuracy: 83.20%
 
 🔹 Model 2 — Deeper Fully Connected Network
 
-Added: one more hidden layer (16 neurons)
-
-Epochs: 20
-
-Optimizer: SGD
-
-Learning Rate: 0.001
-
-Result:
-
 Training Accuracy: 87.29%
 
 Testing Accuracy: 85.45%
 
-📈 Observation:
-Adding more layers and training longer improved performance by ~2%. However, due to the absence of convolutional operations, the model struggled to extract complex spatial features from images.
-
 🧠 Stage 2: Neural Networks With Convolutional Layers
 🔹 Model 1 — Basic CNN
-
-Structure:
-
-Conv2D (32 filters) → Conv2D (32 filters) → MaxPooling
-
-Dense (512) → Dropout (0.2) → Dense (10, softmax)
-
-Epochs: 5
-
-Optimizer: SGD
-
-Learning Rate: 0.001
-
-Result:
 
 Training Accuracy: 86.77%
 
 Testing Accuracy: 85.54%
 
-📊 Observation:
-CNN introduces feature extraction, improving test accuracy compared to fully connected models despite fewer epochs.
-
 🔹 Model 2 — Deeper CNN
-
-Added: more convolutional + pooling layers, 1 additional fully connected layer
-
-Epochs: 10
-
-Optimizer: SGD
-
-Learning Rate: 0.001
-
-Result:
 
 Training Accuracy: 88.99%
 
 Testing Accuracy: 87.16%
 
-📈 Observation:
-The deeper CNN with 6 Conv layers and 3 MaxPooling layers significantly improved generalization.
-
 ⚙️ Stage 3: Optimization Experiments
 🔹 Model 1 — Change Optimizer to Adam
-
-Architecture: Same as Stage 2 Model 2
-
-Optimizer: Adam
-
-Learning Rate: 0.001
-
-Epochs: 10
-
-Result:
 
 Training Accuracy: 97.54%
 
 Testing Accuracy: 92.64%
 
-✅ Insight:
-Adam combines Momentum and RMSProp, allowing faster and smoother convergence. It achieved the highest accuracy overall but showed slight overfitting in later epochs.
-
 🔹 Model 2 — Higher Learning Rate with SGD
-
-Architecture: Same as Stage 2 Model 2
-
-Optimizer: SGD
-
-Learning Rate: 0.005
-
-Epochs: 10
-
-Result:
 
 Training Accuracy: 92.71%
 
 Testing Accuracy: 89.54%
-
-📊 Insight:
-A moderate increase in learning rate accelerated training and improved test accuracy without overfitting.
-However, too large a learning rate could overshoot the minimum and reduce stability.
 
 🏁 Summary of Results
 Rank Test Accuracy (%) Epoch Learning Rate Optimizer Parameters Description
@@ -130,24 +58,6 @@ Rank Test Accuracy (%) Epoch Learning Rate Optimizer Parameters Description
 4 85.54% 5 0.001 SGD 3,226,474 2 Conv layers, 1 Pool, 2 FC
 5 85.45% 20 0.001 SGD 25,874 3 FC Layers
 6 83.20% 10 0.001 SGD 25,474 Simplest MLP with 2 FC layers
-
-📈 Trend:
-
-Deeper networks + convolutional layers → higher accuracy
-
-Adam optimizer provides the best convergence and generalization
-
-Increasing learning rate moderately improves performance but can risk overshooting
-
-🧪 Key Insights
-
-Convolutional Layers are critical for image data; they outperform fully connected architectures.
-
-Adam Optimizer boosts convergence speed and final accuracy due to adaptive learning.
-
-Moderate Learning Rate Increase (0.005) can improve SGD models without overfitting.
-
-Deeper models generalize better, but come at a computational cost.
 
 🧾 Environment & Dependencies
 
