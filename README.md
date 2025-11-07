@@ -1,4 +1,4 @@
-# Neural Network Performance Comparison on MNIST Dataset
+# Neural Network Performance Comparison on Fashion MNIST Dataset
 
 ## Overview
 
