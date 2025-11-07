@@ -76,8 +76,8 @@ git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
 
 # Create Python environment
-conda create -n CSE3CI_env python=3.7
-conda activate CSE3CI_env
+conda create -n my_env python=3.7
+conda activate my_env
 
 # Install dependencies
 pip install tensorflow keras matplotlib numpy pandas scikit-learn
