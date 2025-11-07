@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores **image classification** using multiple **neural network architectures** on the **FashionMNIST dataset**, without using advanced techniques such as **data augmentation**, **transfer learning**, or **pre-trained models** (e.g., ResNet or VGG).
+This project explores image classification using multiple neural network architectures on the FashionMNIST dataset, without using advanced techniques such as data augmentation, transfer learning, or pre-trained models (e.g., ResNet or VGG).
 The goal is to analyze how different model structures, optimizers, and learning rates affect classification performance.
 
 Three main stages were developed and evaluated:
@@ -17,7 +17,7 @@ Each model was trained, tested, and compared based on accuracy, convergence spee
 
 ## Dataset
 
-The **FashionMNIST** dataset contains images of various clothing categories used to benchmark computer vision models.  
+The FashionMNIST dataset contains images of various clothing categories used to benchmark computer vision models.  
 Each image represents one of the following classes:
 
 | Label | Category    |
@@ -33,10 +33,10 @@ Each image represents one of the following classes:
 | 8     | Bag         |
 | 9     | Ankle boot  |
 
-- **Image Size:** 28×28 pixels
-- **Classes:** 10 (T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot)
-- **Training Samples:** 60,000
-- **Testing Samples:** 10,000
+- Image Size: 28×28 pixels
+- Classes: 10 (T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot)
+- Training Samples: 60,000
+- Testing Samples: 10,000
 
 ---
 
@@ -53,14 +53,14 @@ Each image represents one of the following classes:
 
 ➡️ CNNs extracted spatial features effectively, outperforming the fully connected models on both accuracy and generalization.
 
-➡️ Even with the same architecture and number of parameters, switching from **SGD to Adam** improved accuracy from **89.54% → 92.64%**.
+➡️ Even with the same architecture and number of parameters, switching from SGD to Adam improved accuracy from 89.54% → 92.64%.
 
 ---
 
 ## Technologies Used
 
-- **Python 3.7**
-- **Libraries:**
+- Python 3.7
+- Libraries:
   - `tensorflow`, `keras`
   - `numpy`, `pandas`
   - `matplotlib`
