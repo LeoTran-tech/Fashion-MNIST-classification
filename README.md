@@ -13,8 +13,6 @@ Three main stages were developed and evaluated:
 
 Each model was trained, tested, and compared based on testing accuracy.
 
----
-
 ## Dataset
 
 The FashionMNIST dataset contains images of various clothing categories used to benchmark computer vision models.  
@@ -38,8 +36,6 @@ Each image represents one of the following classes:
 - Training Samples: 60,000
 - Testing Samples: 10,000
 
----
-
 ## Summary of Results
 
 | Rank | Test Accuracy (%) | Epochs | LR    | Optimizer | Parameters | Description                           |
@@ -55,8 +51,6 @@ Each image represents one of the following classes:
 
 ➡️ Even with the same architecture and number of parameters, switching from SGD to Adam improved accuracy from 89.54% → 92.64%.
 
----
-
 ## Technologies Used
 
 - Python 3.7
@@ -65,8 +59,6 @@ Each image represents one of the following classes:
   - `numpy`, `pandas`
   - `matplotlib`
   - `scikit-learn` for metrics and data handling
-
----
 
 ## How to Run
 
