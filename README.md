@@ -1,6 +1,6 @@
-# 🧠 Neural Network Performance Comparison on MNIST Dataset
+# Neural Network Performance Comparison on MNIST Dataset
 
-## 📘 Overview
+## Overview
 
 This project explores **image classification** using multiple **neural network architectures** on the **FashionMNIST dataset**.  
 The goal is to analyze how different model structures, optimizers, and learning rates affect classification performance.
@@ -15,13 +15,7 @@ Each model was trained, tested, and compared based on accuracy, convergence spee
 
 ---
 
-## 📊 Dataset
-
-- **Dataset:** FashionMNIST (70,000 grayscale images of clothing items)
-- **Image Size:** 28×28 pixels
-- **Classes:** 10 (T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot)
-- **Training Samples:** 60,000
-- **Testing Samples:** 10,000
+## Dataset
 
 The **FashionMNIST** dataset contains images of various clothing categories used to benchmark computer vision models.  
 Each image represents one of the following classes:
@@ -39,18 +33,23 @@ Each image represents one of the following classes:
 | 8     | Bag         |
 | 9     | Ankle boot  |
 
+- **Image Size:** 28×28 pixels
+- **Classes:** 10 (T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot)
+- **Training Samples:** 60,000
+- **Testing Samples:** 10,000
+
 ---
 
-## 🏁 Summary of Results
+## Summary of Results
 
-| 🥇 Rank | Test Accuracy (%) | Epochs | LR    | Optimizer | Parameters | Description                           |
-| ------- | ----------------- | ------ | ----- | --------- | ---------- | ------------------------------------- |
-| 🥇 1    | 92.64%            | 10     | 0.001 | Adam      | 1,997,034  | Same as Model 3                       |
-| 🥈 2    | 89.54%            | 10     | 0.005 | SGD       | 1,997,034  | Same as Model 3                       |
-| 🥉 3    | 87.16%            | 10     | 0.001 | SGD       | 1,997,034  | 6 Conv layers, 3 Pooling layers, 3 FC |
-| 4       | 85.54%            | 5      | 0.001 | SGD       | 3,226,474  | 2 Conv layers, 1 Pool, 2 FC           |
-| 5       | 85.45%            | 20     | 0.001 | SGD       | 25,874     | 3 FC Layers                           |
-| 6       | 83.20%            | 10     | 0.001 | SGD       | 25,474     | Simplest MLP with 2 FC layers         |
+| Rank | Test Accuracy (%) | Epochs | LR    | Optimizer | Parameters | Description                           |
+| ---- | ----------------- | ------ | ----- | --------- | ---------- | ------------------------------------- |
+| 1    | 92.64%            | 10     | 0.001 | Adam      | 1,997,034  | Same as Model 3                       |
+| 2    | 89.54%            | 10     | 0.005 | SGD       | 1,997,034  | Same as Model 3                       |
+| 3    | 87.16%            | 10     | 0.001 | SGD       | 1,997,034  | 6 Conv layers, 3 Pooling layers, 3 FC |
+| 4    | 85.54%            | 5      | 0.001 | SGD       | 3,226,474  | 2 Conv layers, 1 Pool, 2 FC           |
+| 5    | 85.45%            | 20     | 0.001 | SGD       | 25,874     | 3 FC Layers                           |
+| 6    | 83.20%            | 10     | 0.001 | SGD       | 25,474     | Simplest MLP with 2 FC layers         |
 
 ➡️ CNNs extracted spatial features effectively, outperforming the fully connected models on both accuracy and generalization.
 
@@ -58,7 +57,7 @@ Each image represents one of the following classes:
 
 ---
 
-## 🧠 Technologies Used
+## Technologies Used
 
 - **Python 3.7**
 - **Libraries:**
@@ -69,7 +68,7 @@ Each image represents one of the following classes:
 
 ---
 
-## 💻 How to Run
+## How to Run
 
 ```bash
 # Clone the repository
