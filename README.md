@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores **image classification** using multiple **neural network architectures** on the **FashionMNIST dataset**.  
+This project explores **image classification** using multiple **neural network architectures** on the **FashionMNIST dataset**, without using advanced techniques such as **data augmentation**, **transfer learning**, or **pre-trained models** (e.g., ResNet or VGG).
 The goal is to analyze how different model structures, optimizers, and learning rates affect classification performance.
 
 Three main stages were developed and evaluated:
